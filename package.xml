@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>compass_calib</name>
+  <version>0.0.0</version>
+  <description>This node calibrates the  HMC5883L digital compass and writes the results to a file.</description>
+ 
+  <maintainer email="nicholishiell@gmail.com">Nicholi Shiell</maintainer>
+  <author>Nicholi Shiell</author>
+  <license>FREE</license>
+  <url>http://bots.cs.mun.ca/</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>roscpp</run_depend>
+</package>
