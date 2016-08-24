@@ -114,7 +114,7 @@ int main(int argc, char **argv){
       if(y < yLow) yLow = y;
       if(y > yHigh) yHigh = y;
 
-      printf("%d: [%d,%d]\t[%d,%d]\n", counter, xLow, xHigh, yLow, yHigh);     
+      //printf("%d: [%d,%d]\t[%d,%d]\n", counter, xLow, xHigh, yLow, yHigh);     
     }
     
     counter++;
@@ -132,8 +132,8 @@ int main(int argc, char **argv){
     ros::spinOnce();
     loop_rate.sleep();
   }
-  //printf("%d\t%d\n", xLow, xHigh);
-  //printf("%d\t%d\n", yLow, yHigh);
+  printf("[xLow, xHigh] = %d\t%d\n", xLow, xHigh);
+  printf("[yLow, yHigh] = %d\t%d\n", yLow, yHigh);
 
   fstream output;
   output.open("/home/pi/ns_catkin_ws/src/CompassNode/calib.dat", std::fstream::out);
