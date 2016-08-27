@@ -136,7 +136,7 @@ int main(int argc, char **argv){
   printf("[yLow, yHigh] = %d\t%d\n", yLow, yHigh);
 
   fstream output;
-  output.open("/home/pi/ns_catkin_ws/src/CompassNode/calib.dat", std::fstream::out);
+  output.open("/home/pi/ns_catkin_ws/calibData/compass_calib", std::fstream::out);
   output << xLow <<" "<< xHigh<<"\n";
   output << yLow <<" "<< yHigh<<"\n";
   output.close();
